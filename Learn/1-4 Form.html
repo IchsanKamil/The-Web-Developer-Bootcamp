@@ -1,43 +1,91 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Register</title>
+  </head>
+  <body>
+    <h1>Register</h1>
 
-    <form action="" method="POST">
-        <!-- action="1-1 List.html" -->
+    <form action="" method="">
+      <!-- Name -->
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="" id="name" required placeholder="Ichsan" />
+      </div>
+      <br />
+
+      <!-- Birthday -->
+      <div>
+        <label for="bday">Birthday</label>
+        <input type="date" name="" id="bday" />
+      </div>
+      <br />
+
+      <!-- Email & Password -->
+      <div>
         <label for="email">Email :</label>
-        <input type="email" name="" id="email" placeholder="Username" required>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="email"
+        />
 
         <label for="password">Password :</label>
-        <input type="password" name="" id="password" placeholder="Password" required>
-       
-        <br>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          pattern=".{4,7}"
+          required
+          title="4 to 7 characters"
+          placeholder="password"
+        />
+      </div>
 
-        <p>What's your favourite wuxia novel ?</p>
+      <!-- Activity -->
+      <div>
+        <p>What do you like the most?</p>
 
-        <label for="AtG">Against the God</label>
-        <input type="radio" name="novel" id="AtG" value="Yun Che">
+        <label for="song">Song</label>
+        <input type="radio" name="act" id="song" value="Song" />
 
-        <label for="MW">Martial World</label>
-        <input type="radio" name="novel" id="MW" value="Lin Ming">
+        <label for="anime">Anime</label>
+        <input type="radio" name="act" id="anime" value="Anime" />
 
-        <label for="MGS">Martial God Asura</label>
-        <input type="radio" name="novel" id="MGS" value="Chu Feng">
+        <label for="wuxia">Wuxia Novel</label>
+        <input type="radio" name="act" id="wuxia" value="Wuxia" />
 
+        <label for="game">Game</label>
+        <input type="radio" name="act" id="game" value="Game" />
+      </div>
+
+      <!-- Singer -->
+      <div>
         <p>What's your favourite singer ?</p>
 
-        <select name="" id="">
-            <option value="Avril">Avril Lavigne</option>
-            <option value="Kenshi">Kenshi Yonezhu</option>
-            <option value="Aimer">Aimer</option>
-            <option value="LiSA">LiSA</option>
+        <select name="singer" id="">
+          <option value="Avril">Avril Lavigne</option>
+          <option value="Kenshi">Kenshi Yonezu</option>
+          <option value="Aimer">Aimer</option>
+          <option value="LiSA">LiSA</option>
         </select>
+      </div>
+      <br />
 
-        <button>Go !</button>
+      <!-- Agreed -->
+      <div>
+        <label for="agreed">I agree to the term and condition </label>
+        <input type="checkbox" name="agree" id="agreed" required />
+      </div>
+      <br />
 
+      <!-- Submit -->
+      <input type="submit" name="" id="" />
     </form>
-</body>
+  </body>
 </html>

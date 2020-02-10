@@ -1,0 +1,24 @@
+body {
+  background: url(https://free4kwallpapers.com/uploads/originals/2016/03/27/naruto-anime-4k-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#id 
+.class
+
+/* Star */
+* {
+}
+/* Descendant Selector */
+li a {
+}
+/* Adjacent Selectror */
+h4 + ul {
+}
+/* Attribute Selector */
+input[type="checkbox"] {
+}
+/* nth of type */
+li:nth-of-type(even) {
+}

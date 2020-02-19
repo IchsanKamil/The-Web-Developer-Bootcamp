@@ -1,0 +1,20 @@
+html {
+  height: 100%;
+}
+body {
+  background: url(https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Lacquer;
+}
+.jumbotron {
+  background: none;
+  text-align: center;
+  color: white;
+  padding-top: 20%;
+  text-shadow: 0px 4px 3px red;
+}
+hr {
+  width: 350px;
+  border-top: 2px solid white;
+}

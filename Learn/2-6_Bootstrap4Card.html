@@ -30,7 +30,6 @@
   </head>
 
   <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-dark bg-dark">
       <div class="container justify-content-center">
         <a class="navbar-brand" href="#">
@@ -38,8 +37,8 @@
         </a>
       </div>
     </nav>
-    <!-- Jumbotron -->
-    <section class="jumbotron jumbotron-fluid text-center">
+
+    <section id="header" class="jumbotron jumbotron-fluid text-center">
       <h1 class="display-4">Milady Queen</h1>
       <p class="lead">
         <button type="button" class="btn btn-outline-success">
@@ -51,59 +50,82 @@
         </button>
       </p>
     </section>
-    <!-- Card -->
-    <div class="container">
-      <div class="card-deck">
-        <!-- Avril -->
-        <div class="card" style="width: 18rem;">
-          <img
-            src="https://4.bp.blogspot.com/-3uJuS9mpKzU/UZG--Xwg5FI/AAAAAAAACd0/vWBQgIYJdrA/s1600/Avril+lavigne+-+Smile.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-success">Download</a>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+          <!-- Avril -->
+          <div class="col mb-4">
+            <div class="card">
+              <img
+                src="https://4.bp.blogspot.com/-3uJuS9mpKzU/UZG--Xwg5FI/AAAAAAAACd0/vWBQgIYJdrA/s1600/Avril+lavigne+-+Smile.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="d-flex justify-content-between">
+                  <a href="#" class="btn btn-success">Listen</a>
+                  <a href="#" class="btn btn-outline-success"
+                    ><i class="far fa-heart"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <!-- LiSA -->
-        <div class="card" style="width: 10rem;">
-          <img
-            src="https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2019/12/LiSA-_YouTube.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-danger">Download</a>
+          <!-- LiSA -->
+          <div class="col mb-4">
+            <div class="card">
+              <img
+                src="https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2019/12/LiSA-_YouTube.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="d-flex justify-content-between">
+                  <a href="#" class="btn btn-danger">Listen</a>
+                  <a href="#" class="btn btn-outline-danger"
+                    ><i class="far fa-heart"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <!-- Taylor -->
-        <div class="card" style="width: 18rem;">
-          <img
-            src="https://www.rollingstone.com/wp-content/uploads/2019/09/RS1332_Taylor-Swift_by-Erik-Madigan-Heck_01.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-warning">Download</a>
+          <!-- Taylor -->
+          <div class="col mb-4">
+            <div class="card">
+              <img
+                src="https://www.rollingstone.com/wp-content/uploads/2019/09/RS1332_Taylor-Swift_by-Erik-Madigan-Heck_01.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="d-flex justify-content-between">
+                  <a href="#" class="btn btn-warning">Listen</a>
+                  <a href="#" class="btn btn-outline-warning"
+                    ><i class="far fa-heart"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

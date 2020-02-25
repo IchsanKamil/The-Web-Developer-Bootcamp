@@ -18,22 +18,38 @@
       href="https://fonts.googleapis.com/css?family=Tangerine&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/cc5b5b392d.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
       body {
-        background: tan;
+        background: gray;
+        font-family: "tangerine", serif;
       }
       #navb {
-        font-family: "tangerine", serif;
         font-size: 2rem;
       }
       .navbar-brand {
         font-size: 2rem;
       }
       #navb .nav-link {
-        color: rgba(255, 255, 255, 0.836);
+        color: rgb(0, 0, 0);
       }
       #navb .nav-link:hover {
         color: rgb(227, 94, 107);
+      }
+      #mq h1 {
+        font-family: "tangerine", serif;
+        font-size: 7rem;
+      }
+      @media (max-width: 1200px) {
+        #mq h1 {
+          font-size: 4rem;
+        }
+      }
+      #3mq h1 {
+        font-size: 1000px;
       }
     </style>
     <title>Milady Queen 2.0</title>
@@ -44,7 +60,7 @@
         <i class="fas fa-chess-queen mr-1"></i>MQ
       </a>
       <button
-        class="navbar-toggler"
+        class="navbar-toggler bg-danger"
         type="button"
         data-toggle="collapse"
         data-target="#navbarSupportedContent"
@@ -69,24 +85,59 @@
       </div>
     </nav>
 
-    <section class="container-fluid px-0">
-      <div class="row row-cols-2 px-0">
-        <div class="col border">
-          <h1>Milady Queen</h1>
-          <h1>Milady Queen</h1>
-          <h1>Milady Queen</h1>
-          <h1>Milady Queen</h1>
-          <h1>Milady Queen</h1>
-          <h1>Milady Queen</h1>
+    <section id="headMain" class="container-fluid px-0">
+      <div class="row align-items-center">
+        <div id="mq" class="col-lg-6 text-center d-none d-lg-block">
           <h1>Milady Queen</h1>
         </div>
-        <div class="col border px-0 d-flex">
+        <div class="col-lg-6 border px-0">
           <img
             class="img-fluid"
-            style="height:auto"
             src="https://images.unsplash.com/photo-1474169482634-9d0381a70510?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80"
             alt=""
           />
+        </div>
+      </div>
+    </section>
+
+    <section id="3mq" class="container-fluid px-0">
+      <div id="Avril" class="row align-items-center">
+        <div class="col-lg-6">
+          <img
+            src="https://i.pinimg.com/originals/7e/17/00/7e170080fba842feaddb2bb22f908ed4.jpg"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-lg-6 text-center mb-0">
+          <h1>Avril Lavigne</h1>
+          <i class="fas fa-dog fa-4x d-none d-lg-block"></i>
+        </div>
+      </div>
+      <div id="LiSA" class="row align-items-center">
+        <div class="col-lg-6 text-center mb-0">
+          <h1>LiSA</h1>
+          <i class="fas fa-crow fa-4x d-none d-lg-block"></i>
+        </div>
+        <div class="col-lg-6">
+          <img
+            src="https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2019/12/LiSA-_YouTube.jpg"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+      </div>
+      <div id="Taylor" class="row align-items-center">
+        <div class="col-lg-6">
+          <img
+            src="https://i.pinimg.com/originals/d6/dd/fe/d6ddfe1865862baaa1204d48a07a6773.jpg"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-lg-6 text-center mb-0">
+          <h1>Taylor Swift</h1>
+          <i class="fas fa-cat fa-4x d-none d-lg-block"></i>
         </div>
       </div>
     </section>

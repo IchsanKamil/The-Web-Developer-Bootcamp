@@ -1,0 +1,42 @@
+body {
+  background: gray;
+  font-family: "tangerine", serif;
+}
+.top100 {
+  margin-top: 100px;
+  margin-bottom: 74px;
+}
+.mt8 {
+  margin-top: 8px;
+}
+#navb {
+  font-size: 2rem;
+}
+.navbar-brand {
+  font-size: 2rem;
+}
+#navb .nav-link {
+  color: rgb(0, 0, 0);
+}
+#navb .nav-link:hover {
+  color: rgb(227, 94, 107);
+}
+#mq h1 {
+  font-family: "tangerine", serif;
+  font-size: 7rem;
+}
+@media (max-width: 1200px) {
+  #mq h1 {
+    font-size: 4rem;
+  }
+}
+#3mq h1 {
+  font-size: 1000px;
+}
+#LiSA {
+  background: #ff4539;
+}
+.scrolled {
+  background: lightgray;
+  transition: background 700ms;
+}

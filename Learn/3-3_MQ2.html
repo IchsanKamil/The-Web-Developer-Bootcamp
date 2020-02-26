@@ -22,36 +22,7 @@
       src="https://kit.fontawesome.com/cc5b5b392d.js"
       crossorigin="anonymous"
     ></script>
-    <style>
-      body {
-        background: gray;
-        font-family: "tangerine", serif;
-      }
-      #navb {
-        font-size: 2rem;
-      }
-      .navbar-brand {
-        font-size: 2rem;
-      }
-      #navb .nav-link {
-        color: rgb(0, 0, 0);
-      }
-      #navb .nav-link:hover {
-        color: rgb(227, 94, 107);
-      }
-      #mq h1 {
-        font-family: "tangerine", serif;
-        font-size: 7rem;
-      }
-      @media (max-width: 1200px) {
-        #mq h1 {
-          font-size: 4rem;
-        }
-      }
-      #3mq h1 {
-        font-size: 1000px;
-      }
-    </style>
+    <link rel="stylesheet" href="3-3_MQ2.css">
     <title>Milady Queen 2.0</title>
   </head>
   <body>
@@ -101,22 +72,22 @@
     </section>
 
     <section id="3mq" class="container-fluid px-0">
-      <div id="Avril" class="row align-items-center">
-        <div class="col-lg-6">
+      <div id="Avril" class="row align-items-center top100 bg-success">
+        <div class="col-lg-6 order-2 order-lg-1">
           <img
             src="https://i.pinimg.com/originals/7e/17/00/7e170080fba842feaddb2bb22f908ed4.jpg"
             alt=""
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-6 text-center mb-0">
-          <h1>Avril Lavigne</h1>
+        <div class="col-lg-6 text-center mb-0 order-1 order-lg-2">
+          <h1 class="mt8">Avril Lavigne</h1>
           <i class="fas fa-dog fa-4x d-none d-lg-block"></i>
         </div>
       </div>
-      <div id="LiSA" class="row align-items-center">
+      <div id="LiSA" class="row align-items-center top100">
         <div class="col-lg-6 text-center mb-0">
-          <h1>LiSA</h1>
+          <h1 class="mt8">LiSA</h1>
           <i class="fas fa-crow fa-4x d-none d-lg-block"></i>
         </div>
         <div class="col-lg-6">
@@ -127,16 +98,16 @@
           />
         </div>
       </div>
-      <div id="Taylor" class="row align-items-center">
-        <div class="col-lg-6">
+      <div id="Taylor" class="row align-items-center bg-warning top100">
+        <div class="col-lg-6 order-2 order-lg-1">
           <img
             src="https://i.pinimg.com/originals/d6/dd/fe/d6ddfe1865862baaa1204d48a07a6773.jpg"
             alt=""
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-6 text-center mb-0">
-          <h1>Taylor Swift</h1>
+        <div class="col-lg-6 text-center mb-0 order-1 order-lg-2">
+          <h1 class="mt8">Taylor Swift</h1>
           <i class="fas fa-cat fa-4x d-none d-lg-block"></i>
         </div>
       </div>
@@ -157,5 +128,13 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(function() {
+        $(document).scroll(function() {
+          var $nav = $("#navb");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
   </body>
 </html>
